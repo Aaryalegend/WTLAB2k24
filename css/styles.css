@@ -75,3 +75,309 @@ video {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #f55f5f; /* Background color for the navbar */
+    padding: 15px 20px; /* Padding for the navbar */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+}
+
+.navbar-container {
+    display: flex; /* Use flexbox for navbar items */
+    align-items: center; /* Center logo and links */
+    justify-content: space-between; /* Space between logo and menu items */
+    max-width: 1200px; /* Max width for the navbar */
+    margin: 0 auto; /* Centering the navbar */
+    width: 100%; /* Full width */
+}
+
+.logo {
+    height: 50px; /* Set height for the logo */
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color for links */
+    font-weight: bold; /* Make text bold */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    margin-top: 70px;
+}
+
+/* Video Carousel */
+.video-carousel {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.carousel-item {
+    margin-right: 20px;
+    text-align: center;
+}
+
+video {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .video-carousel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-item {
+        margin-bottom: 20px;
+    }
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card .icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* About Us Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .about-text {
+        margin-top: 20px;
+    }
+}
+
+/* Title Section */
+#title {
+    position: relative; /* Ensure positioning for the video */
+    padding: 100px 20px;
+    text-align: center;
+    color: white; /* Text color for visibility against video */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+    z-index: -1; /* Place video behind text */
+}
+
+.title-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; /* Ensures text is above video */
+    z-index: 1; /* Bring text above the video */
+}
+
+h1#typewriter-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures hidden characters remain hidden */
+}
+
+.subtitle {
+    font-size: 18px;
+}
+
+/* Typewriter Effect */
+@keyframes blink {
+    50% { border-right-color: transparent; }
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding */
+    text-align: center; /* Centered text */
+}
+
+.footer-container {
+    max-width: 800px; /* Max width for the footer */
+    margin: 0 auto; /* Centering the container */
+}
+
+.footer p {
+    margin: 10px 0; /* Margin for the paragraph */
+}
+
+.social-media {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.social-media li {
+    display: inline; /* Inline list items */
+    margin: 0 15px; /* Margin between social links */
+}
+
+.social-media a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

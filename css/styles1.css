@@ -1,0 +1,174 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #f55f5f; /* Background color for the navbar */
+    padding: 15px 20px; /* Padding for the navbar */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for effect */
+}
+
+.navbar-container {
+    display: flex; /* Use flexbox for navbar items */
+    align-items: center; /* Center logo and links */
+    justify-content: space-between; /* Space between logo and menu items */
+    max-width: 1200px; /* Max width for the navbar */
+    margin: 0 auto; /* Centering the navbar */
+    width: 100%; /* Full width */
+}
+
+.logo {
+    height: 50px; /* Set height for the logo */
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between menu items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Text color for links */
+    font-weight: bold; /* Make text bold */
+}
+
+nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+}
+
+
+/* Section */
+.section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section h1,
+.section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Services and Technologies List */
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+}
+
+/* Process Steps */
+.section ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.section ol li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Case Studies and FAQs */
+.case-study, .faq {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.case-study h3, .faq h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.case-study p, .faq p {
+    color: #666;
+}
+
+/* Testimonials */
+blockquote {
+    background-color: #fffcf2;
+    padding: 15px 20px;
+    border-left: 5px solid #ff6347;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: #555;
+}
+
+blockquote p {
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+/* Link Styling */
+a {
+    color: #ff6347;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}

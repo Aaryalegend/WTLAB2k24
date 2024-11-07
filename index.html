@@ -3,44 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form with Video Streaming</title>
+    <title>Enhanced Contact Form with Videos</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Video Streaming</h2>
 
-        <!-- Video Section -->
-        <div class="video-container">
-            <!-- Video 1 -->
-            <div class="video">
-                <h3>Video 1</h3>
+    <!-- Navbar -->
+<nav>
+    <div class="navbar-container">
+        <img src="photos/logo.png" alt="Company Logo" class="logo">
+        <ul>
+            <li><a href="#videos">Videos</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- Title Section -->
+    <section id="title" class="section">
+        <!-- Background Video -->
+        <video autoplay muted loop class="background-video">
+            <source src="videos/video5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="title-container">
+            <h1 id="typewriter-title"></h1>
+            <p class="subtitle">This is a multi-feature web application offering dynamic content, video streaming, and interactive services.</p>
+        </div>
+    </section>
+
+
+    <!-- Video Section
+    <section id="videos" class="section">
+        <h2>Video Gallery</h2>
+
+        <div class="video-carousel">
+            <div class="carousel-item">
                 <video width="320" height="240" controls>
                     <source src="videos/video1.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <p>Video 1</p>
             </div>
-
-            <!-- Video 2 -->
-            <div class="video">
-                <h3>Video 2</h3>
+            <div class="carousel-item">
                 <video width="320" height="240" controls>
                     <source src="videos/video2.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <p>Video 2</p>
             </div>
-
-            <!-- Video 3 (Optional) -->
-            <div class="video">
-                <h3>Video 3</h3>
+            <div class="carousel-item">
                 <video width="320" height="240" controls>
                     <source src="videos/video3.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <p>Video 3</p>
+            </div>
+            <div class="carousel-item">
+                <video width="320" height="240" controls>
+                    <source src="videos/video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Video 4</p>
             </div>
         </div>
+    </section> -->
 
-        <!-- Contact Form Section -->
+    <!-- Services Section -->
+    <section id="services" class="section fade-in">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+                <div class="icon">&#128187;</div> <!-- Placeholder for an icon -->
+                <h3><a href="web-development.html">Web Development</a></h3>
+                <p>We build fast, responsive, and scalable websites tailored to your needs.</p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+                <div class="icon">&#127910;</div> <!-- Placeholder for an icon -->
+                <h3><a href="video-streaming.html">Video Streaming Solutions</a></h3>
+                <p>Offering high-quality video streaming solutions with adaptive bitrate streaming.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+                <div class="icon">&#128241;</div> <!-- Placeholder for an icon -->
+                <h3><a href="mobile-development.html">Mobile App Development</a></h3>
+                <p>We develop user-friendly mobile apps for iOS and Android platforms.</p>
+            </div>            
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section fade-in">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <!-- Image -->
+            <div class="about-image">
+                <img src="photos/team.jpeg" alt="Teamwork Image">
+            </div>
+            <!-- Text -->
+            <div class="about-text">
+                <p>We are a dynamic team of developers and designers committed to delivering high-quality web development services, video streaming solutions, and mobile apps. Our passion for technology and collaboration drives us to continuously innovate and improve our services. Join us on this exciting journey!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section fade-in">
         <h2>Contact Us</h2>
         <form id="contactForm" action="php/process_form.php" method="POST">
             <label for="name">Name:</label>
@@ -55,7 +131,20 @@
             <button type="submit">Submit</button>
         </form>
         <div id="formMessage"></div>
-    </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Team Wizards. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>
